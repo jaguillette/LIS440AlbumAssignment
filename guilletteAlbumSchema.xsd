@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Album">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Identifier"></xs:element>
+                <xs:element name="Title"></xs:element>
+                <xs:element name="AltTitle" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element name="Artist" maxOccurs="unbounded"></xs:element>
+                <xs:element name="Composer" maxOccurs="unbounded"></xs:element>
+                <xs:element name="Publisher"></xs:element>
+                <xs:element name="DateOfRelease" minOccurs="0" type="xs:date"></xs:element>
+                <xs:element name="DateRecorded" minOccurs="0" type="xs:date"></xs:element>
+                <xs:element name="DateComposed" minOccurs="0" type="xs:date"></xs:element>
+                <xs:element name="DateAcquired" type="xs:date"></xs:element>
+                <xs:element name="DateAvailable" type="xs:date"></xs:element>
+                <xs:element name="Price"></xs:element>
+                <xs:element name="Medium"></xs:element>
+                <xs:element name="Genre" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element name="PhysicalNotes" minOccurs="0"></xs:element>
+                <xs:element name="Language" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element name="CountryOfOrigin" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element name="Notes" minOccurs="0"></xs:element>
+                <xs:element name="Track" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TrackNumber" type="xs:integer"></xs:element>
+                            <xs:element name="Title"></xs:element>
+                            <xs:element name="Identifier"></xs:element>
+                            <xs:element name="Publisher"></xs:element>
+                            <xs:element name="AltTitle" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                            <xs:element name="Artist" maxOccurs="unbounded"></xs:element>
+                            <xs:element name="Composer" maxOccurs="unbounded"></xs:element>
+                            <xs:element name="DateOfRelease" minOccurs="0" type="xs:date"></xs:element>
+                            <xs:element name="DateRecorded" minOccurs="0" type="xs:date"></xs:element>
+                            <xs:element name="DateComposed" minOccurs="0" type="xs:date"></xs:element>
+                            <xs:element name="Genre" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                            <xs:element name="Language" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                            <xs:element name="CountryOfOrigin" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                            <xs:element name="Notes" minOccurs="0"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
